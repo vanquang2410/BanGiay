@@ -1,0 +1,265 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  header {
+    height: 100px;
+    width: 100%;
+    background-color: white;
+    box-shadow: 0 1px 30px -4px #00000078;
+    display: flex;
+    justify-content: space-between;
+    font-family: Arial, Helvetica, sans-serif;
+    
+    
+  }
+  
+  .header_logo_img {
+    width: 70%;
+  }
+  
+  .header_text {
+    font-size: 1.9vw;
+  }
+  .alert-container {
+    background-color: #d6cfcf;
+    padding: 20px;
+    border-radius: 5px;
+    position: fixed;
+    top: 40%;
+    right: 0%;
+    transform: translate(-50%, -50%);
+    z-index: 9;
+    font-family: arial;
+  }
+  
+  
+  .header_logo {
+    padding: 0 12%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 35%;
+  }
+  
+  .header_right {
+    width: 35%;
+  }
+  
+  .header_ul {
+    list-style-type: none;
+    display: flex;
+    justify-content: space-between;
+    width: 90%;
+    padding: 30px 13% 0px 0px;
+    margin-right: 20%;
+  }
+  
+  .number_cart {
+    background-color: red;
+    padding: 4px 7px 4px 7px;
+    border-radius: 70px;
+    color: white;
+    font-size: 13px;
+    position: absolute;
+    left: 18px;
+    top: -13px
+  }
+  
+  .header_cart {
+    position: relative;
+  }
+  
+  .header_li :hover {
+    border-bottom: rgb(211, 46, 90) 3px solid;
+  }
+  
+  .material-icons {
+    cursor: pointer;
+    color: #000;
+  }
+  
+  main {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 25px;
+    margin: 20px 13% 40px 15%;
+  }
+  
+  .box {
+    box-shadow: 0 1px 12px -4px #00000078;
+    border-radius: 8px;
+    width: 23%;
+    height: auto;
+    padding-bottom: 15px;
+  }
+  
+  .box:hover {
+    box-shadow: 0 12px 20px 6px #00000078;
+    transition-duration: 0.5s;
+    transition-timing-function: ease;
+    transition-property: transform;
+    transform: translateY(-10px);
+  }
+  
+  @media screen and (max-width: 1300px) {
+    main {
+      margin: 20px 5% 40px 5%;
+    }
+  
+    .box {
+      width: 30%;
+      height: auto;
+    }
+  }
+  
+  @media screen and (max-width: 938px) {
+    main {
+      margin: 20px 5% 40px 5%;
+    }
+  
+    .box {
+      width: 45%;
+      height: auto;
+    }
+  }
+  
+  @media screen and (max-width: 768px) {
+    main {
+      margin: 20px 5% 40px 5%;
+    }
+  
+    .box {
+      width: 45%;
+      height: auto;
+    }
+  }
+  
+  @media screen and (max-width: 505px) {
+    main {
+      margin: 20px 3% 40px 3%;
+    }
+  
+    .box {
+      width: 90%;
+      height: auto;
+      margin-left: 4%;
+    }
+  }
+  
+  .box_img {
+    border-radius: 8px;
+    width: 100%;
+    position: relative;
+  }
+  
+  .name {
+    margin-top: 4px;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    padding-bottom: 18px;
+  }
+  
+  .quantity {
+    margin-left: 10%;
+    font-family: Arial, Helvetica, sans-serif;
+  }
+  
+  .price {
+    margin-left: 20%;
+    font-family: Arial, Helvetica, sans-serif;
+  }
+  
+  .box_img_custom {
+    position: relative;
+  }
+  
+  .fa-circle {
+    color: white;
+    position: absolute;
+    font-size: 2.2em;
+    left: 80%;
+    top: 80%;
+    border-radius: 50%;
+    box-shadow: 0 1px 12px -4px #00000078;
+  }
+  
+  .add_cart {
+    position: absolute;
+    font-size: 2.2em;
+    left: 82%;
+    top: 82%;
+    border-radius: 50%;
+  }
+  
+  
+  @media only screen and (max-width: 768px) {
+    header {
+      height: auto;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+    }
+  
+    .header_logo_img {
+      width: 50%;
+    }
+  
+    .header_text {
+      font-size: 4vw;
+    }
+  
+  
+    .header_logo {
+      width: 80%;
+      padding: 0;
+      margin-top: 20px;
+      justify-content: center;
+    }
+  
+    .header_right {
+      width: 80%;
+      margin-top: 20px;
+    }
+  
+    .header_ul {
+      padding: 10px 5% 0 0;
+      margin-right: 0;
+    }
+  
+    .nike {
+      display: none;
+    }
+  
+  }
+  
+  
+  @media only screen and (max-width: 480px) {
+    .header_text {
+      font-size: 2.5ch;
+    }
+  
+    .header_logo_img {
+      width: 60%;
+    }
+  
+    .header_right {
+      width: 90%;
+    }
+  
+    .header_ul {
+      width: 100%;
+      flex-direction: column;
+      align-items: center;
+      padding: 10px 0 0 0;
+      margin-right: 0;
+    }
+  
+    .header_li {
+      margin-bottom: 10px;
+    }
+  }
+  

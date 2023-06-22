@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/51755c69cc.js" crossorigin="anonymous"></script>  
+    <title>Document</title>
+    <link rel="stylesheet" href="../css/bill.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+</head>
+
+<body>
+    <header>
+        <div class="header_logo">
+            <img class="header_logo_img"
+                src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a6/Logo_NIKE.svg/1920px-Logo_NIKE.svg.png"
+                alt="">
+            <h2 class="header_text nike">Nike</h2>
+        </div>
+        <div class="header_right">
+            <ul class="header_ul">
+                <li class="header_li">
+                    <h2 class="header_text home">Home</h2>
+                </li>
+                <li class="header_li">
+                    <h2 class="header_text">About</h2>
+                </li>
+                <li class="header_li">
+                    <h2 class="header_text bills">Bills</h2>
+                </li>
+                <span class="header_cart"> <i class="material-icons icon_cart "> shopping_cart </i><span
+                        class="number_cart">0</span> </span>
+
+
+            </ul>
+
+        </div>
+    </header>
+    <main>
+  <table class="tableListBill">
+            <tr>
+                <th class="table_th_code">Code</th>
+                <th class="table_th_customer">Customer Name</th>
+                <th class="table_th_date">Date</th>
+                <th class="table_th_item">Item Numbers</th>
+                <th class="table_th_quantity">Total Quantity</th>
+                <th class="table_th_price">Total Price</th>
+                <th class="table_th_return">Return</th>
+            </tr>
+           
+            <tbody id="render_bill">
+               
+             
+
+            </tbody>
+            <dialog class="dialog_detail_bill">
+                <h2 class="title">Chi Tiết Đơn Hàng</h2>
+                <div class="render_bill">
+                </div> 
+                <button type="button" class="close_dialog">Close</button>
+            </dialog>
+
+        </table>
+        <div class="action">
+         
+            <button class="back"> ⇐ Back to Shopping </button>
+          
+    </main>
+</body>
+<script type="module" src="../js/product.js"></script>
+<script type="module" src="../js/bill.js"></script>
+<script type="module" src="../js/cart.js"></script>
+<script type="module" src="../js/getAddress.js"></script>
+</html>

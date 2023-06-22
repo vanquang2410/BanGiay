@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/51755c69cc.js" crossorigin="anonymous"></script>
+    <title>Document</title>
+</head>
+<link rel="stylesheet" href="../css/cart.css">
+<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+<body>
+    <header>
+        <div class="header_logo">
+            <img class="header_logo_img"
+                src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a6/Logo_NIKE.svg/1920px-Logo_NIKE.svg.png"
+                alt="">
+            <h2 class="header_text nike">Nike</h2>
+        </div>
+        <div class="header_right">
+            <ul class="header_ul">
+                <li class="header_li">
+                    <h2 class="header_text home">Home</h2>
+                </li>
+                <li class="header_li">
+                    <h2 class="header_text">About</h2>
+                </li>
+                <li class="header_li">
+                    <h2 class="header_text bills">Bills</h2>
+                </li>
+                <span class="header_cart"> <i class="material-icons icon_cart "> shopping_cart </i><span
+                        class="number_cart">0</span> </span>
+
+
+            </ul>
+
+        </div>
+    </header>
+    <main>
+
+        <table class="tableListProduct">
+            <tr>
+                <th class="table_th_name">Product Name</th>
+                <th class="table_th_quantity">Quantity</th>
+                <th class="table_th_sub">Subtotal</th>
+                <th class="table_th_total">Total</th>
+                <th class="table_th_clear">Clear Cart</th>
+            </tr>
+           
+            <tbody id="render">
+            </tbody>
+        </table>
+        <dialog class="dialog">
+            <form id="myform">
+                <h2>Thông Tin Người Mua</h2>
+                <label>
+                    Họ và tên:
+                    <div class="form-row">
+                        <input type="text" name="firstname" id="firstName" placeholder="Họ" >
+                        <input type="text" name="lastname" id="lastName" placeholder="Tên" >
+                    </div>
+                    <div class="form-row">
+                        <div id="firstNameError" class="error"></div>
+                        <div id="lastNameError" class="error"></div>
+                        </div>
+                </label>
+                <label>
+                    Email:
+                    <input type="email" name="email" id="email" >
+                    <div id="emailError" class="error"></div>
+                </label>
+                 
+                <label>
+                    Số điện thoại:
+                    <input type="tel" name="phone" id="phone" >
+                    <div id="phoneError" class="error"></div>
+                </label>
+                <label>
+                    Địa chỉ:
+                    <div class="form-row">
+                        <select id="province" ></select>
+                        <select id="district" ></select>
+                        <select id="ward" ></select>
+                    </div>
+                    <div class="form-row">
+                        <div id="provinceError" class="error"></div>
+                        <div id="districtError" class="error"></div>
+                        <div id="wardError" class="error"></div>
+                    </div>
+                </label>
+                <label>
+                    Địa chỉ chi tiết:
+                    <input type="text" name="address" id="address" >
+                    <div id="addressError" class="error"></div>
+                </label>
+                <label>
+                    Lời nhắn:
+                    <textarea name="message" id="message"></textarea>
+                </label>
+
+                <button type="button" class="close">Hủy</button>
+                <button type="submit" class="submit">Xác Nhận</button>
+            </form>
+        </dialog>
+
+        <div class="action">
+            <p class="total"> </p>
+            <button class="back"> ⇐ Back to Shopping </button>
+            <span class="buttonBuy"> <button class="buy" >Buy</button> </span>
+        </div>
+    </main>
+</body>
+<script type="module" src="../js/product.js"></script>
+<script type="module" src="../js/bill.js"></script>
+<script type="module" src="../js/cart.js"></script>
+<script type="module" src="../js/validate.js"></script>
+<script type="module" src="../js/getAddress.js"></script>
+</html>
