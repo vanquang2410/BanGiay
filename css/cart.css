@@ -3,7 +3,13 @@
   padding: 0;
   box-sizing: border-box;
 }
-
+svg{
+  width: 30px;
+  height: 30px;
+}
+.none{
+  display: none;
+}
 header {
   height: 100px;
   width: 100%;
@@ -137,6 +143,7 @@ th {
   font-size: 1.2vw;
   color: #000000;
 }
+
 
 .table_th_total {
   text-align: center;

@@ -1,11 +1,12 @@
 import { keyLocalStorageItemCart, keyLocalStorageListSP } from "./constant.js";
 import { handleBack, handleOpenCart, handleOpenHome } from "./handle.js";
-import { deleteUser, getLocal, getUser, saveLocal } from "./iife.js";
+import { deleteUser, getLocal, getUser, saveLocal, logout } from "./iife.js";
 
 const listProduct=getLocal(keyLocalStorageListSP);
 handleBack();
 handleOpenCart();
 handleOpenHome();
+logout()
 const getBill=async()=>{
     const listData= await getUser();
     console.log(listData);

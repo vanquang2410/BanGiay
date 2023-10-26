@@ -68,3 +68,9 @@ export const addUser= (product)=>{
     const data= res.json();
     return data
   }
+  export const logout = ()=>{
+    const logout=document.querySelector('svg')
+    logout.addEventListener('click',()=>{
+        document.location.href='../html/signIn.html'
+    })
+  }

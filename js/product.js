@@ -1,8 +1,10 @@
 import { keyLocalStorageItemCart, keyLocalStorageListSP, renderCountProduct, showAutoCloseAlert } from "./constant.js";
 import { handleOpenBills, handleOpenCart, handleOpenHome } from "./handle.js";
-import { getLocal, saveLocal } from "./iife.js";
+import { getLocal, saveLocal,logout } from "./iife.js";
 import { listData } from "./infomationProduct.js";
 
+
+logout()
 let newListProduct=[]
 if (getLocal(keyLocalStorageListSP)){
     newListProduct=getLocal(keyLocalStorageListSP)

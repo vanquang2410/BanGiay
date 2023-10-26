@@ -1,6 +1,6 @@
 import { keyLocalStorageItemCart, keyLocalStorageListSP, renderCountProduct, showAutoCloseAlert } from "./constant.js";
 import { handleBack, handleOpenBills, handleOpenCart } from "./handle.js";
-import { getLocal, saveLocal } from "./iife.js";
+import { getLocal, saveLocal,logout } from "./iife.js";
 
 
 const listCart = getLocal(keyLocalStorageItemCart);
@@ -8,6 +8,7 @@ const listProduct = getLocal(keyLocalStorageListSP);
 
 
 console.log(listCart);
+logout()
 handleOpenBills();
 handleOpenCart();
 handleBack()
